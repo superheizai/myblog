@@ -9,6 +9,7 @@ CREATE TABLE Blog_User
   id INT NOT NULL auto_increment COMMENT '主键',
     role_id INT NOT NULL  COMMENT 'role主键',
   name varchar(300) NOT NULL  COMMENT '名字',
+     password varchar(300) not null comment '密码',
   picture VARCHAR(5000) NOT NULL DEFAULT '' COMMENT '图片',
    add_time DATETIME NOT NULL COMMENT '添加时间',
   upate_time TIMESTAMP NOT NULL DEFAULT NOW() ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
